@@ -1,0 +1,51 @@
+.core-features{
+    &__list{
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        @media screen and (max-width:$tablet){
+           flex-direction: column;
+           align-items: center;
+           text-align: center;
+        }
+        h1{
+            @media screen and (max-width:$tablet){
+                font-size: 1.3rem;
+             }
+        }
+    }
+    &__item{
+        max-width: 346px;
+        @media screen and (max-width:$tablet){
+            margin-bottom: 43px;
+         }
+        img{
+            width: 100%;
+        }
+    }
+    &__big{
+        margin-top: 43px;
+        img{
+            width: 100%;
+            max-width:864px;
+            @include center-block;
+        }
+        p{
+            text-align: center;
+            max-width: 572px;
+            margin: 0 auto;
+            margin-top: 23px;
+        }
+        .btn{
+            @include center-block;
+            max-width: 8em;
+            margin-top: 23px;
+        }
+        .below-btn{
+            @include center-block;
+        }
+    }
+}
+
+

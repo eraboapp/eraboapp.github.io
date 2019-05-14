@@ -1,0 +1,19 @@
+title: Erabo App
+description: Erabo App Static Website
+
+compress_html:
+  clippings: all
+  comments:  ["<!-- ", " -->"]
+  endings:   all
+
+exclude:
+  - _sass
+  - Gemfile
+  - Gemfile.lock
+  - gulpfile.js
+  - node_modules
+  - package.json
+  - package-lock.json
+
+plugins:
+- jekyll-autoprefixer

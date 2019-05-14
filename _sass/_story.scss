@@ -1,0 +1,178 @@
+.introduction {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    &__kanji {
+        color: $primary;
+        margin: 0;
+        font-size: 3.5rem;
+        font-weight: 600;
+    }
+
+    &__brand {
+        margin: 0;
+    }
+
+    &__definition {
+        font-size: 2rem;
+        width: 50%;
+        text-align: center;
+
+
+        @media screen and (max-width:$tablet){
+            width: 80%;
+            font-size: 1.3rem;
+         }
+    }
+}
+
+.the-idea {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    max-width: 800px;
+
+    h1 {
+        margin: 0;
+        font-size: 2.4rem;
+        font-weight: 600;
+    }
+
+    &__introduction {
+        text-align: center;
+        font-size: 1.1rem;
+        margin-bottom: 40px;
+        &.--signature{
+            margin-bottom: 40px;
+        }
+    }
+
+    &__social-proof {
+
+        display: flex;
+        flex-direction: row;
+        border: 1px $primary solid;
+        padding: 20px 60px;
+
+        h1 {
+            color: $primary;
+            margin: 0;
+            font-weight: 600;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        p {
+            font-size: 1.2rem;
+            
+            align-self: center;
+            margin: 0 5%;
+        }
+
+        @media screen and (max-width:$tablet){
+            flex-direction: column;
+            padding: 20px 40px;
+            margin-top: 2%;
+
+            h1 {
+                align-self: center;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 1.2rem;
+                margin: 0;
+            }
+        }
+    }
+
+    @media screen and (max-width:$tablet){
+        margin: 0 5%;
+        margin-top: 5%;
+    }
+}
+
+.our-story {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 800px;
+
+    span {
+        color: $primary;
+    }
+
+    h1 {
+        font-size: 2.4rem;
+        font-weight: 600;
+    }
+
+    p {
+        text-align: center;
+        font-size: 1.1rem;
+    }
+
+    @media screen and (max-width:$tablet){
+        margin: 0 5%;
+        margin-top: 10%;
+    }
+}
+
+
+.invitation {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 15% 5% 15%;
+
+    h1 {
+        text-align: center;
+        font-size: 2.4rem;
+        font-weight: 600;
+    }
+
+    &__social-media {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 50%;
+        margin-top: 2%;
+
+        a {
+            text-decoration: underline;
+        }
+    }
+
+    @media screen and (max-width:$tablet){
+        margin: 0 5% 5% 5%;
+
+        h1 {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 500;
+        }
+
+        &__social-media {
+            width: 100%;
+            flex-direction: column-reverse;
+            height: 120px;
+            text-align: center;
+            margin-block-end: 20px;
+            
+        }
+
+        a{
+            font-size: 20px;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.banner{
+    background-color: $bg-color;
+    color: white;
+    padding-top: 53px;
+    padding-bottom: 53px;
+    margin-top: 107px;
+    @media screen and (max-width:$tablet){
+        margin-top: 23px;
+        padding: 53px 33px;
+     }
+    img{
+        @include center-block;
+        margin-bottom: 27px;
+    }
+    h5{
+        @include center-font;
+        @include center-block;
+        font-size: 25px;
+        margin-bottom: 27px;
+        max-width: 700px;
+        @media screen and (max-width:$tablet){
+            font-size: 1.4rem;
+         }
+    }
+    p{
+        @include center-font;
+        @include center-block;
+        font-size: 21px;
+        max-width: 700px;
+        @media screen and (max-width:$tablet){
+            font-size: 16px;
+         }
+    }
+    .btn{
+       @include center-block;
+       max-width: 5em;
+       margin-top: 25px;
+
+    }
+}

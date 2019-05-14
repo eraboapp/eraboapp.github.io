@@ -1,0 +1,40 @@
+.above-the-fold{
+    display: flex;
+    @media screen and (max-width:$tablet){
+        flex-direction: column-reverse;
+    }
+    &__info{
+        padding-top: 75px;
+        padding-left: 75px;
+        padding-right: 75px;
+        @media screen and (max-width:$tablet){
+            text-align: center;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 40px;
+        }
+        h1{
+            font-size: 2.2rem;
+            margin-bottom: 31px;
+            @media screen and (max-width:$tablet){
+                margin-top: 0;
+                font-size: 1.8rem;
+            }
+            span{
+                color: $primary;
+            }
+        }
+        h2{
+            font-weight: 400;
+            font-size: 1.3rem;
+            margin: 31px 0;
+        }
+    }
+    &__video{
+        max-width: 60%;
+        @media screen and (max-width:$tablet){
+            max-width: 100%;
+            margin-bottom: 0;
+        }
+    }
+}

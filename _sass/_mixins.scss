@@ -1,0 +1,18 @@
+//Fonts
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500,600,700');
+
+@mixin body-font {
+  font-family: 'Source Sans Pro', "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+}
+
+@mixin center-block {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+@mixin center-font {
+  text-align: center;
+  margin: 0;
+}

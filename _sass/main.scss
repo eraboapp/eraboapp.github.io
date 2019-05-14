@@ -1,0 +1,19 @@
+/* Core variables and mixins */
+@import "variables.scss";
+@import "mixins.scss";
+
+/* Global CSS */
+@import "global.scss";
+
+// Components
+@import "header.scss";
+@import "above-the-fold.scss";
+@import "core-features.scss";
+@import "banner.scss";
+@import "footer.scss";
+@import "pricing.scss";
+@import "story.scss";
+@import "cards.scss";
+@import "docs.scss";
+@import "side-menu.scss";
+

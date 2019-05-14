@@ -1,0 +1,111 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+
+    .logo {
+        max-width: 120px;
+    }
+
+    .burger {
+        position: relative;
+        display: none;
+        cursor: pointer;
+
+        @mixin lines {
+            width: 30px;
+            height: 3px;
+            background-color: $primary;
+        }
+
+        @include lines;
+
+        &::before {
+            content: '';
+            @include lines;
+            position: absolute;
+            left: 0;
+            top: -10px;
+        }
+
+        &::after {
+            content: '';
+            @include lines;
+            position: absolute;
+            left: 0;
+            top: 10px;
+        }
+
+        @media screen and (max-width:$tablet) {
+            display: initial;
+        }
+
+        &.menu-on {
+
+            z-index: 10;
+            background: rgba(111, 111, 111, 0);
+
+            &::before {
+                top: 0;
+                transform: rotate(45deg);
+            }
+
+            &::after {
+                top: 0;
+                bottom: 0;
+                transform: rotate(-45deg);
+            }
+        }
+
+    }
+
+
+    .nav {
+        display: inital;
+        align-items: center;
+        transition: all 0.3s;
+
+        a:not(:first-child) {
+            margin-left: 2rem;
+        }
+
+        @media screen and (max-width:$tablet) {
+
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            opacity: 0;
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            background-color: white;
+            transform: translateY(-100vh);
+
+            :first-child {
+                margin-top: 20%;
+            }
+
+            a:not(:first-child) {
+                margin-left: 0;
+            }
+
+            &.--menu-open {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .--selected {
+            color: $primary;
+        }
+    }
+}
+
+.no-scroll {
+    overflow: hidden
+}

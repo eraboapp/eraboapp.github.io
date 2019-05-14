@@ -1,0 +1,44 @@
+.side-menu{
+    width: 20%;
+    border-right: solid gray .1px;
+    padding: .5em;
+    h1{
+        font-size: 2rem;
+    }
+    &__item{
+        display: block;
+        margin-bottom: .5em;
+    }
+    &__app-title{
+        display: block;
+        font-size: 1.3rem;
+        margin-bottom: .5em;
+        // border-bottom: solid gray .5px;
+        padding: .5em 0;
+        display: flex;
+        align-items: center;
+        color: $primary;
+        img{
+            max-height: 1em;
+            margin-right: .5em;
+        }
+        
+    }
+    &__title{
+        display: block;
+        font-size: 1.2rem;
+        margin-bottom: .5em;
+        margin-top: 2em;
+        padding: .5em 0;
+        display: flex;
+        align-items: center;
+        color: $secondary;
+        font-weight: bold;
+        svg{
+            max-height: 1em;
+            max-width: 1em;
+            margin-right: .5em;
+        }
+        
+    }
+}

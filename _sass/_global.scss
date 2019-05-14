@@ -1,0 +1,109 @@
+body {
+  @include body-font;
+  color: $secondary;
+  a{
+    text-decoration: none;
+    color: $secondary;
+  }
+}
+
+.btn{
+  color: white;
+  background-color: $primary;
+  padding: .5em 1em;
+  border-radius: 3px;
+  text-align: center;
+  @media screen and (max-width:$tablet){
+    padding: .5em 3em;
+}
+  &.--inverted{
+    color: $primary;
+    background-color: white;
+  }
+  &.--center{
+    margin: 12px auto;
+    display: block;
+    max-width: 120px;
+    text-align: center;
+  }
+}
+
+.below-btn{
+  font-size: .7rem;
+  max-width: 95px;
+  text-align: center;
+  &.--center{
+    margin: 0 auto;
+    display: block;
+  }
+  @media screen and (max-width:$tablet){
+    display: block;
+    margin: 12px auto;
+}
+}
+
+.title{
+  @include center-font;
+  font-size: 2rem;
+  margin-top: 2em;
+  &.--no-top{
+    margin-top: 0;
+}
+}
+
+.sub-title{
+  @include center-font;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.logo-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.brand{
+  color: $primary;
+  display: none;
+  @media screen and (max-width:$tablet){
+    display: initial;
+}
+}
+
+//Erabo-Dynamic-Logos
+
+#Erabo-PS{
+ 
+}
+
+.erabo-brand-text{
+  display: block;
+  text-align: center;
+  max-width: 114px;
+}
+
+//Forms
+
+#erabo-cloud-form{
+  padding: 0 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 23px;
+  input{
+    max-width: 800px;
+    height: 46px;
+    border: 0;
+    padding-left: 30px;
+    font-size: 1rem;
+  }
+  button{
+    height: 48px;
+    background: white;
+    border: 0;
+    width: 44px;
+    cursor: pointer;
+  }
+}
+
