@@ -3,6 +3,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 4em;
+    margin-bottom: 4em;
 
 
     &__kanji {
@@ -34,8 +36,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 auto;
-    margin-top: 40px;
+    margin: 4em auto;
     max-width: 800px;
 
     h1 {
@@ -59,6 +60,7 @@
         flex-direction: row;
         border: 1px $primary solid;
         padding: 20px 60px;
+        margin-top: 4em;
 
         h1 {
             color: $primary;
@@ -133,7 +135,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 15% 5% 15%;
+    margin: 0 15% 4em 15%;
 
     h1 {
         text-align: center;
