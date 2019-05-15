@@ -1,3 +1,7 @@
+:root{
+  font-display: auto;
+}
+
 body {
   @include body-font;
   color: $secondary;
