@@ -4,13 +4,24 @@
     max-width: 1000px;
     margin: 40px auto;
     justify-content: space-between;
+    
 }
 
 .docs{
     width: 70%;
+    @media screen and (max-width:$tablet) {
+        width: 90vw;
+        margin: 0 auto;
+    }
     h1{
         font-size: 3.25rem;
         margin: 1em auto .1em auto;
+        @media screen and (max-width:$tablet) {
+            font-size: 2rem;
+        }
+    }
+    img{
+        max-width: 90vw;
     }
     h2{
         margin-top: 3em;
@@ -26,6 +37,8 @@
         margin-top: 40px;
         margin-bottom: 40px;
         display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
     a{
         color: $primary;
