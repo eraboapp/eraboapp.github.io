@@ -1,5 +1,11 @@
 :root{
   font-display: auto;
+  ::selection {
+    background: #FBA9AC; /* WebKit/Blink Browsers */
+  }
+  ::-moz-selection {
+    background: #FBA9AC; /* Gecko Browsers */
+  }
 }
 
 body {
