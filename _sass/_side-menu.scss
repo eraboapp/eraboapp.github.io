@@ -2,6 +2,9 @@
     width: 20%;
     border-right: solid gray .1px;
     padding: .5em;
+    @media screen and (max-width:$tablet) { 
+        display: none;
+    }
     h1{
         font-size: 2rem;
     }
