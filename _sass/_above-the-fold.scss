@@ -3,6 +3,21 @@
     @media screen and (max-width:$tablet){
         flex-direction: column-reverse;
     }
+    img{
+        max-width: 100%;
+        max-height: 70vh;
+    }
+    .link{
+        color: $primary;
+        display: block;
+        margin-bottom: 1em;
+        &.--inline{
+            display: inline;
+            &:last-child{
+                margin-left: 20px;
+            }
+        }
+    }
     &__info{
         padding-top: 75px;
         padding-left: 75px;
