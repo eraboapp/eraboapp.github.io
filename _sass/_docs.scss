@@ -38,7 +38,9 @@
         margin-bottom: 40px;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        @media screen and (max-width:$tablet) {
+            justify-content: space-around;
+        }
     }
     a{
         color: $primary;
