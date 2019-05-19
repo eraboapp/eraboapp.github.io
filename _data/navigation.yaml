@@ -1,0 +1,17 @@
+navigation_list_title: Top Navigation Items
+links:
+
+- title: Pre-Selector
+  url: /
+
+- title: Story
+  url: /story/
+
+- title: Learn
+  url: /docs/
+
+- title: Pricing
+  url: /pricing/
+
+- title: Contact Us
+  url: /contact/

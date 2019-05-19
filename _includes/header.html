@@ -1,20 +1,24 @@
 <header class="header">
-  <div class="logo-container">
-    <a href="/"><img src="/assets/images/erabo-logo.svg" alt="Erabo" class="logo"></a>
-    <a href="/" class="brand">Pre-Selector™</a>
-  </div>
+	<div class="logo-container">
+		<a href="/"><img src="/assets/images/erabo-logo.svg" alt="Erabo" class="logo"></a>
+		<a href="/" class="brand">Pre-Selector™</a>
+	</div>
 
-  <span class="burger"></span>
+	<span class="burger"></span>
 
-  <div class="nav">
-    <a href="/" class="--selected">Pre-Selector</a>
-    <!-- <a href="/cloud.html">Cloud™</a> -->
-    <a href="/story">Story</a>
-    <a href="/docs">Learn</a>
-    <a href="/pricing">Pricing</a>
-    <a href="/contact">Contact Us</a>
-    <a href="/" class="btn">Try it for free</a>
-  </div>
+	<div class="nav">
+		{% for link in site.data.navigation.links %} 
+			{% assign class = nil %} 
+			{% if page.url == link.url %}
+				{% assign class = '--selected' %} 
+			{% elsif link.url != '/' and page.url contains link.url %} 
+				{% assign class = '--selected' %} 
+			{% endif %} 
+			<a href="{{link.url}}" class="{{class}}">{{link.title}}</a> 
+		{% endfor %}
+		<a href="/" class="btn">Try it for free</a>
+	</div>
 </header>
+
 
 
