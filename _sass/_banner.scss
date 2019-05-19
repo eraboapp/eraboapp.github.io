@@ -4,6 +4,37 @@
     padding-top: 53px;
     padding-bottom: 53px;
     margin-top: 107px;
+    &__submited{
+        display: none;
+    }
+    &__error{
+        display: none;
+    }
+    &.--submited{
+        .banner__submited{
+            color: #8ED4A0;
+            display: block;
+            margin-top: 30px;
+            font-weight: bold;
+            background-color: white;
+            padding: 10px 0;
+            max-width: 400px;
+        }
+        #erabo-cloud-form{
+            display: none;
+        }
+    }
+    &.--error{
+        .banner__error{
+            color: #DF7156;
+            display: block;
+            margin-top: 30px;
+            font-weight: bold;
+            background-color: white;
+            padding: 10px 0;
+            max-width: 400px;
+        }
+    }
     @media screen and (max-width:$tablet){
         margin-top: 23px;
         padding: 53px 33px;
@@ -24,7 +55,7 @@
     }
     p{
         @include center-font;
-        @include center-block;
+        margin:auto;
         font-size: 21px;
         max-width: 700px;
         @media screen and (max-width:$tablet){
@@ -35,6 +66,5 @@
        @include center-block;
        max-width: 5em;
        margin-top: 25px;
-
     }
 }
