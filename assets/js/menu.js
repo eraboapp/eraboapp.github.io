@@ -31,7 +31,6 @@ nav.querySelectorAll('a')
     });
 });
 
-
 function preventDefault(e) {
     e.preventDefault();
 }
