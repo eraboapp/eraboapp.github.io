@@ -4,6 +4,10 @@
     padding-top: 53px;
     padding-bottom: 53px;
     margin-top: 107px;
+    &__link{
+        font-weight: bold;
+        color: white;
+    }
     &__submited{
         display: none;
     }
@@ -12,7 +16,7 @@
     }
     &.--submited{
         .banner__submited{
-            color: #8ED4A0;
+            color: rgb(209, 211, 209);
             display: block;
             margin-top: 30px;
             font-weight: bold;
