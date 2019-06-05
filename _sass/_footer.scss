@@ -4,4 +4,23 @@
     display: flex;
     padding: 30px 5%;
     justify-content: space-between;
+    @media screen and(max-width:$tablet) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center
+    }
+    img{
+        max-height: 20px;
+        margin-right: 1em;
+    }
+    div{
+        display: flex;
+        align-items: center;
+    }
+    p{
+        margin-right: 1em; 
+    }
+    a{
+        color: white;
+    }
 }
